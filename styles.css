@@ -15,14 +15,16 @@ header {
     font-size: 1.5rem;
 }
 
-header, form {
+header,
+form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input, form button {
+form input,
+form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
@@ -37,8 +39,8 @@ form button {
 }
 
 form button:hover {
-   color: white;
-   background: rgb(18, 151, 204);
+    color: white;
+    background: rgb(18, 151, 204);
 }
 
 .todo-container {
@@ -67,8 +69,9 @@ form button:hover {
     flex: 1;
 }
 
-.trash-btn, .complete-btn {
-    background:  rgb(18, 151, 204);
+.trash-btn,
+.complete-btn {
+    background: rgb(18, 151, 204);
     color: white;
     border: none;
     padding: 1rem;
@@ -84,7 +87,8 @@ form button:hover {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash, .fa-check {
+.fa-trash,
+.fa-check {
     pointer-events: none;
 }
 
@@ -104,7 +108,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    color:rgb(18, 151, 204);
+    color: rgb(18, 151, 204);
     cursor: pointer;
     width: 10rem;
     padding: 1rem;
@@ -132,3 +136,51 @@ select {
     color: rgb(18, 151, 204);
 }
 
+.color {
+    color: white;
+    font-size: smaller;
+}
+
+.btn-hero {
+    text-transform: uppercase;
+    background: transparent;
+    color: whitesmoke;
+    letter-spacing: var(--spacing);
+    font-weight: 700;
+    transition: var(--transition);
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.btn-hero:hover {
+    color: black;
+    background: whitesmoke;
+}
+
+.container, .flex-container {
+    font-size: 15px;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: nowrap;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    max-height: fit-content;
+    width: 100%;
+    background-color: rgb(8, 8, 8, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

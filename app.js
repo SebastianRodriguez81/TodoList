@@ -145,3 +145,19 @@ function addTodo(event) {
     //borrar el texto del input
     todoInput.value = ""
 }
+
+//Ingreso del nombre de usuario
+
+function alerta() 
+{
+var mensaje;
+var opcion = prompt("Introduzca su nombre:", "Ej:James Bond");
+ 
+if (opcion == null || opcion == "") {
+        mensaje = "Has cancelado o introducido el nombre vacío";
+        } else {
+            mensaje = "Hola, " + opcion;
+            }
+            document.getElementById("ejemplo").innerHTML = mensaje;
+            document.getElementById("titulo").innerHTML = opcion + " TodoList";
+}
